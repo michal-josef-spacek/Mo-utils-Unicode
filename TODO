@@ -4,7 +4,10 @@ TODO
 2. Check for Unicode code point range
 5. Doc.
 6. Tests.
-8.
+8. Check for Unicode code point which is character.
+9. Check for Unicode code point which is combining item.
+10. Check for Unicode code point which is control character.
+11.
 
 Applied
 =======
