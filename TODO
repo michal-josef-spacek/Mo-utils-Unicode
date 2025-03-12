@@ -2,9 +2,12 @@ TODO
 ====
 1. Check for Unicode code point
 2. Check for Unicode code point range
-3. Check for Unicode block
 4. Check for Unicode script.
-5.
+5. Doc.
+6. Tests.
+7.
 
 Applied
 =======
+3. Check for Unicode block
+OK [20250312] skim
