@@ -46,7 +46,7 @@ sub _check_unicode_block {
 	my ($value, $key) = @_;
 
 	if (none { $value eq $_ } keys %{charblocks()}) {
-		err "Parameter '".$key."' doesn't contain valid Unicode block.",
+		err "Parameter '".$key."' contains invalid Unicode block.",
 			'Value', $value,
 		;
 	}

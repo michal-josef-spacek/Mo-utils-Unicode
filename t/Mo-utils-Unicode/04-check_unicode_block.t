@@ -26,6 +26,6 @@ $self = {
 eval {
 	check_unicode_block($self, 'key');
 };
-is($EVAL_ERROR, "Parameter 'key' doesn't contain valid Unicode block.\n",
-	"Parameter 'key' doesn't contain valid Unicode block (bad).");
+is($EVAL_ERROR, "Parameter 'key' contains invalid Unicode block.\n",
+	"Parameter 'key' contains invalid Unicode block (bad).");
 clean();
