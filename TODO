@@ -2,7 +2,6 @@ TODO
 ====
 1. Check for Unicode code point
 2. Check for Unicode code point range
-4. Check for Unicode script.
 5. Doc.
 6. Tests.
 8.
@@ -13,4 +12,7 @@ Applied
 OK [20250312] skim
 
 7. Add check_array_unicode_block().
+OK [20250312] skim
+
+4. Check for Unicode script.
 OK [20250312] skim

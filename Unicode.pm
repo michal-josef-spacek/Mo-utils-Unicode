@@ -8,9 +8,9 @@ use Error::Pure qw(err);
 use List::Util 1.33 qw(none);
 use Mo::utils 0.06 qw(check_array);
 use Readonly;
-use Unicode::UCD 'charblocks';
+use Unicode::UCD qw(charblocks charscripts);
 
-Readonly::Array our @EXPORT_OK => qw(check_array_unicode_block check_unicode_block);
+Readonly::Array our @EXPORT_OK => qw(check_array_unicode_block check_unicode_block check_unicode_script);
 
 our $VERSION = 0.01;
 
@@ -38,6 +38,22 @@ sub check_unicode_block {
 	}
 
 	_check_unicode_block($self->{$key}, $key);
+
+	return;
+}
+
+sub check_unicode_script {
+	my ($self, $key) = @_;
+
+	if (! exists $self->{$key}) {
+		return;
+	}
+
+	if (none { $self->{$key} eq $_ } keys %{charscripts()}) {
+		err "Parameter '".$key."' contains invalid Unicode script.",
+			'Value', $self->{$key},
+		;
+	}
 
 	return;
 }
