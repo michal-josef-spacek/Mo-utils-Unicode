@@ -2,7 +2,6 @@ TODO
 ====
 1. Check for Unicode code point
 2. Check for Unicode code point range
-6. Tests.
 8. Check for Unicode code point which is character.
 9. Check for Unicode code point which is combining item.
 10. Check for Unicode code point which is control character.
@@ -20,4 +19,7 @@ OK [20250312] skim
 OK [20250312] skim
 
 5. Doc.
+OK [20250313] skim
+
+6. Tests.
 OK [20250313] skim
