@@ -12,7 +12,7 @@ use Unicode::UCD qw(charblocks charscripts);
 
 Readonly::Array our @EXPORT_OK => qw(check_array_unicode_block check_unicode_block check_unicode_script);
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 sub check_array_unicode_block {
 	my ($self, $key) = @_;
@@ -313,6 +313,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut
