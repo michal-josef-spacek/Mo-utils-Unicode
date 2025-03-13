@@ -20,6 +20,7 @@ meta-spec:
 name: Mo-utils-Unicode
 no_index:
   directory:
+    - examples
     - inc
     - t
     - xt

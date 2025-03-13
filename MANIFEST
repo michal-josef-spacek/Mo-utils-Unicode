@@ -1,4 +1,10 @@
 Changes
+examples/check_array_unicode_block_fail.pl
+examples/check_array_unicode_block_ok.pl
+examples/check_unicode_block_fail.pl
+examples/check_unicode_block_ok.pl
+examples/check_unicode_script_fail.pl
+examples/check_unicode_script_ok.pl
 inc/Module/Install.pm
 inc/Module/Install/AuthorRequires.pm
 inc/Module/Install/AuthorTests.pm
