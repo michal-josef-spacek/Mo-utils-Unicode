@@ -6,7 +6,7 @@ use warnings;
 
 use Error::Pure qw(err);
 use List::Util 1.33 qw(none);
-use Mo::utils 0.06 qw(check_array);
+use Mo::utils::Array qw(check_array);
 use Readonly;
 use Unicode::UCD qw(charblocks charscripts);
 
@@ -129,7 +129,7 @@ Returns undef.
 =head1 ERRORS
 
  check_array_unicode_block():
-         From Mo::utils::check_array():
+         From Mo::utils::Array::check_array():
                  Parameter '%s' must be a array.
                          Value: %s
                          Reference: %s
@@ -281,7 +281,7 @@ Returns undef.
 L<Error::Pure>,
 L<Exporter>,
 L<List::Util>,
-L<Mo::utils>
+L<Mo::utils::Array>
 L<Readonly>,
 L<Unicode::UCD>.
 
